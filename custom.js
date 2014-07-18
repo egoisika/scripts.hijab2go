@@ -35,13 +35,13 @@ if(typeof cookieValue === 'undefined' || cookieValue !='dgsdffdf_yes'){
          {
            $('.block_content').append("<div id='popUpSucessDiv' class='warning_inline alert alert-danger'>"+response.error+"</div>");
            $.cookie('nlSignup', 'dgsdffdf_yes', { expires: 365, path: '/' });
-            setTimeout(function() { $("#nlBGWrapper").hide(); }, 10000);
+            setTimeout(function() { $("#nlBGWrapper").hide(); }, 5000);
          }
           else
           {
              $('.block_content').append("<div id='popUpSucessDiv' class='success_inline alert alert-success'>"+response.success+"</div>");
             $.cookie('nlSignup', 'dgsdffdf_yes', { expires: 365, path: '/' });
-            setTimeout(function() { $("#nlBGWrapper").hide(); }, 10000);
+            setTimeout(function() { $("#nlBGWrapper").hide(); }, 5000);
           }
              
         },
@@ -55,7 +55,7 @@ if(typeof cookieValue === 'undefined' || cookieValue !='dgsdffdf_yes'){
   $('.noThanks').click(function(event){
     event.preventDefault();
      $.cookie('nlSignup', 'dgsdffdf_yes', { expires: 30, path: '/' });
-      setTimeout(function() { $("#nlBGWrapper").hide(); }, 10000);
+      setTimeout(function() { $("#nlBGWrapper").hide(); }, 5000);
   });
  };
 });
